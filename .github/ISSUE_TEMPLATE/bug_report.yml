@@ -1,0 +1,65 @@
+name: Bug report
+description: Something in Kepler, RubixKube, the Observer or the installer isn't working.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. This issue is public, so please leave out secrets, tokens and customer data. Security problems go to security@rubixkube.ai instead.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - Kepler
+        - RubixKube console or platform
+        - Observer agent
+        - Installer
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Kepler or Observer version, or the date and time you saw it in the console.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, and what you connected (Kubernetes cluster, VM, AWS, GCP, Azure).
+      placeholder: macOS 15.4, Kubernetes 1.30 on EKS
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove anything sensitive before pasting.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched existing issues and didn't find this one.
+          required: true
+        - label: I removed secrets and customer data from this report.
+          required: true
