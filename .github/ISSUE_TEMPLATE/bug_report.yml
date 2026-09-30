@@ -1,5 +1,5 @@
 name: Bug report
-description: Something in Kepler, RubixKube, the Observer or the installer isn't working.
+description: Something in RubixKube or Kepler isn't working.
 labels: ["bug", "needs-triage"]
 body:
   - type: markdown
@@ -11,10 +11,8 @@ body:
     attributes:
       label: Product
       options:
+        - RubixKube
         - Kepler
-        - RubixKube console or platform
-        - Observer agent
-        - Installer
         - Not sure
     validations:
       required: true
@@ -39,7 +37,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: Kepler or Observer version, or the date and time you saw it in the console.
+      description: Kepler version, RubixKube observer version, or the date and time you saw it in the console.
     validations:
       required: true
   - type: input

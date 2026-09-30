@@ -1,6 +1,6 @@
 # RubixKube Community
 
-The public place to report bugs and share feedback on anything from RubixKube: **Kepler**, the **RubixKube** console and platform, the **Observer** agent and the installer.
+The public place to report bugs and share feedback on **RubixKube** and **Kepler**.
 
 | I want to… | Go to |
 | --- | --- |
